@@ -3,7 +3,7 @@ node('jenkins-slave') {
      stage('test pipeline') {
         sh(script: """
             echo "HEllo world"
-         
+            kubectl get no
         """)
     }
 }
